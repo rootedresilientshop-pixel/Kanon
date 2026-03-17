@@ -1,0 +1,14 @@
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "kanon-sentry"
+version = "0.1.0"
+dependencies = [
+    "pydantic",
+    "nicegui",
+]
+
+[tool.maturin]
+python-source = "kanon_sdk"

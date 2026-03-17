@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/kanon_core",
+]
+resolver = "2"

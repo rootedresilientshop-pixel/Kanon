@@ -1,0 +1,4 @@
+{"timestamp":"2026-03-05T04:39:45.056482500+00:00","intent_id":"mkt-001","action_params":{"daily_budget":50.0},"result":"PASS","reason":null}
+{"timestamp":"2026-03-05T04:39:45.058972900+00:00","intent_id":"mkt-001","action_params":{"daily_budget":150.0},"result":"FAIL","reason":"Constraint violation: daily_budget <= Number(100.0)"}
+{"timestamp":"2026-03-05T04:45:29.892903200+00:00","intent_id":"mkt-001","action_params":{"daily_budget":150.0},"result":"FAIL","reason":"Constraint violation: daily_budget <= Number(100.0)"}
+{"timestamp":"2026-03-05T04:54:04.047434200+00:00","intent_id":"global-guard-001","action_params":{"amount":60.0},"result":"FAIL","reason":"Dynamic Violation: Total spend would reach 510"}
