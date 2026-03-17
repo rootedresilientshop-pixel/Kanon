@@ -4,11 +4,24 @@ build-backend = "maturin"
 
 [project]
 name = "kanon-sentry"
-version = "0.1.0"
+version = "0.2.0"
+authors = [{name = "DreamCraft Studio", email = "your-email@example.com"}]
+description = "A deterministic, local-first safety layer for agentic AI."
+readme = "README.md"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Rust",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Topic :: Security",
+]
+urls = { "Homepage" = "https://github.com/rootedresilientshop-pixel/Kanon-Sentry", "Bug Tracker" = "https://github.com/rootedresilientshop-pixel/Kanon-Sentry/issues" }
 dependencies = [
     "pydantic",
     "nicegui",
 ]
 
 [tool.maturin]
-python-source = "kanon_sdk"
+manifest-path = "src/kanon_core/Cargo.toml"
+python-packages = ["kanon_sdk", "kanon_thinktank"]
